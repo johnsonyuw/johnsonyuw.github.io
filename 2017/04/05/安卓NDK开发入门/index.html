@@ -87,22 +87,22 @@
 
 
 
-<meta name="description" content="这篇文字本应该2016年底或者2017年初的时候写的，一拖再拖，一直到即将进入三月。时间真是无情，一直往前，从不回头。可是我们却必须回头看看逝去的一年做了什么有意义的事儿，或者糟糕的事儿，展望新的一年的新的计划。
-过去的2016，总的来说是收获满满的一年。
-公司成长壮大了，从年初的60人扩大到了一百多人规模的大团队。四月份公司从东部软件园搬到了杭钢冶金大厦，从小单间变成了一整层。整个公司也从之前的">
+<meta name="description" content="最近开发中有个需求，将部分逻辑封装到so中进行保护。因此，尝试很久没有使用的JNI开发。对于JNI入门相关的文章已经很多了，如：Android Studio JNI开发入门教程本文主要记录几点项目开发中遇到的问题及解决方法。
+###开发环境Studio2.2版本，目前AS对JNI的支持已经非常完善，默认使用CMake进行编译，支持C层代码的Debug（LLDB），感觉要飞起来了。
+###问题一：">
 <meta property="og:type" content="article">
-<meta property="og:title" content="2016再见，2017你好">
-<meta property="og:url" content="http://yoursite.com/2017/02/09/2016总结/index.html">
+<meta property="og:title" content="安卓NDK开发入门">
+<meta property="og:url" content="http://yoursite.com/2017/04/05/安卓NDK开发入门/index.html">
 <meta property="og:site_name" content="酋长部落格">
-<meta property="og:description" content="这篇文字本应该2016年底或者2017年初的时候写的，一拖再拖，一直到即将进入三月。时间真是无情，一直往前，从不回头。可是我们却必须回头看看逝去的一年做了什么有意义的事儿，或者糟糕的事儿，展望新的一年的新的计划。
-过去的2016，总的来说是收获满满的一年。
-公司成长壮大了，从年初的60人扩大到了一百多人规模的大团队。四月份公司从东部软件园搬到了杭钢冶金大厦，从小单间变成了一整层。整个公司也从之前的">
-<meta property="og:updated_time" content="2017-02-21T13:43:40.613Z">
+<meta property="og:description" content="最近开发中有个需求，将部分逻辑封装到so中进行保护。因此，尝试很久没有使用的JNI开发。对于JNI入门相关的文章已经很多了，如：Android Studio JNI开发入门教程本文主要记录几点项目开发中遇到的问题及解决方法。
+###开发环境Studio2.2版本，目前AS对JNI的支持已经非常完善，默认使用CMake进行编译，支持C层代码的Debug（LLDB），感觉要飞起来了。
+###问题一：">
+<meta property="og:updated_time" content="2017-04-05T13:11:32.094Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="2016再见，2017你好">
-<meta name="twitter:description" content="这篇文字本应该2016年底或者2017年初的时候写的，一拖再拖，一直到即将进入三月。时间真是无情，一直往前，从不回头。可是我们却必须回头看看逝去的一年做了什么有意义的事儿，或者糟糕的事儿，展望新的一年的新的计划。
-过去的2016，总的来说是收获满满的一年。
-公司成长壮大了，从年初的60人扩大到了一百多人规模的大团队。四月份公司从东部软件园搬到了杭钢冶金大厦，从小单间变成了一整层。整个公司也从之前的">
+<meta name="twitter:title" content="安卓NDK开发入门">
+<meta name="twitter:description" content="最近开发中有个需求，将部分逻辑封装到so中进行保护。因此，尝试很久没有使用的JNI开发。对于JNI入门相关的文章已经很多了，如：Android Studio JNI开发入门教程本文主要记录几点项目开发中遇到的问题及解决方法。
+###开发环境Studio2.2版本，目前AS对JNI的支持已经非常完善，默认使用CMake进行编译，支持C层代码的Debug（LLDB），感觉要飞起来了。
+###问题一：">
 
 
 
@@ -130,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/02/09/2016总结/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/04/05/安卓NDK开发入门/"/>
 
 
 
 
 
-  <title> 2016再见，2017你好 | 酋长部落格 </title>
+  <title> 安卓NDK开发入门 | 酋长部落格 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -253,7 +253,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/02/09/2016总结/">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/05/安卓NDK开发入门/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="Chandler Yu">
@@ -277,7 +277,7 @@
             
             
               
-                2016再见，2017你好
+                安卓NDK开发入门
               
             
           </h1>
@@ -292,8 +292,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-09T19:50:59+08:00">
-                2017-02-09
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-04-05T20:38:26+08:00">
+                2017-04-05
               </time>
             
 
@@ -328,26 +328,9 @@
       
 
       
-        <p>这篇文字本应该2016年底或者2017年初的时候写的，一拖再拖，一直到即将进入三月。时间真是无情，一直往前，从不回头。可是我们却必须回头看看逝去的一年做了什么有意义的事儿，或者糟糕的事儿，展望新的一年的新的计划。</p>
-<p>过去的2016，总的来说是收获满满的一年。</p>
-<p>公司成长壮大了，从年初的60人扩大到了一百多人规模的大团队。四月份公司从东部软件园搬到了杭钢冶金大厦，从小单间变成了一整层。整个公司也从之前的用户量增长向盈利为目标的增长，公司应该说是更加成熟了。生活也非常完美，八月二十六日，我们可爱的桐桐宝贝降生了，乐乐刚好上幼儿园，希望两个宝贝快了成长。最后，想对老婆说声，辛苦了！遇到你真是我三生有幸。</p>
-<p>逝去的一年也有很多遗憾，最大的遗憾就是个人的提升速度不够，自我分析是对事物的研究的深度不够，总是浮于表面的逻辑。究其原因，主要还是个人原因，对事情统筹的不够。很多事情没有安排，没有章法。逻辑千变万化，需要抓住不变的东西，才能够提升。</p>
-<p>对于2017年，做一个简单的计划。</p>
-<ul>
-<li>坚持每天晨跑</li>
-<li><p>坚持阅读</p>
-</li>
-<li><p>坚持每周陪伴儿子，周末多搞一些活动。</p>
-</li>
-<li><p>坚持每个月写一篇文章，以技术为主。深入某个话题。</p>
-</li>
-<li><p>优化产品的架构</p>
-</li>
-<li><p>优化产品的性能</p>
-</li>
-<li><p>完成产品的MD改造。</p>
-</li>
-</ul>
+        <p>最近开发中有个需求，将部分逻辑封装到so中进行保护。因此，尝试很久没有使用的JNI开发。<br>对于JNI入门相关的文章已经很多了，如：<a href="http://www.jianshu.com/p/9bf3d308ff7f" target="_blank" rel="external">Android Studio JNI开发入门教程</a><br>本文主要记录几点项目开发中遇到的问题及解决方法。</p>
+<p>###开发环境<br>Studio2.2版本，目前AS对JNI的支持已经非常完善，默认使用CMake进行编译，支持C层代码的Debug（LLDB），感觉要飞起来了。</p>
+<p>###问题一： 为什么生成的so体积这么大。<br>CMake默认不进行Strip操作，在打递交包的时候，会调用Task：transformNative_libsWithStripDebugSymbolFor，清除So符号表。<br>其实这个task是调用了NDK的Strip工具。</p>
 
       
     </div>
@@ -378,8 +361,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/02/08/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2017/02/09/2016总结/" rel="next" title="2016再见，2017你好">
+                <i class="fa fa-chevron-left"></i> 2016再见，2017你好
               </a>
             
           </div>
@@ -387,10 +370,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/04/05/安卓NDK开发入门/" rel="prev" title="安卓NDK开发入门">
-                安卓NDK开发入门 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
